@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>697</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form {
+	background-color: qlineargradient(spread:pad, x1:0.637, y1:0.142364, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 86, 86, 207));
+	color: #EEE;
+}
+
+QLabel {
+	color: #EEE;
+}
+
+#curr_otp {
+	padding: 5px;
+	border-radius: 10px;
+	background: transparent;
+	color: #EEE;
+	border: none;
+	outline: none;
+}
+#curr_otp:hover {
+	border: 1px solid #EEE;
+}
+
+#new_otp_token {
+	border-radius: 20px;
+	padding: 5px;
+}
+
+#new_otp_name {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding: 5px;
+	padding-right: 10px;
+}
+
+QPushButton {
+	color: red;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	background-color: white;
+	border-left: 1px solid #DDD;
+}
+QPushButton:hover {
+	color: #EEE;
+	background-color: red;
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>MY2FA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="new_otp_token">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>380</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>OTP token</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addOtp_btn">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>440</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>ADD OTP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="otp_timeCounter">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>270</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #DDD;</string>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="curr_otp">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>170</y>
+     <width>371</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>ADD AN OTP!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>ERROR !</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="copy_btn">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>210</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 20px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>COPY</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="current_otp_name">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>120</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>NO OTP FOUND !</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="new_otp_name">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>440</y>
+     <width>321</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>OTP name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteOtp_btn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>440</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>DELETE</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="otp_pages">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>141</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	width: 100%;
+	font-size: 16px;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top-right-radius: 17px;
+	border-bottom-right-radius: 17px;
+	font-weight: bold;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="second_label">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>280</y>
+     <width>55</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px;</string>
+   </property>
+   <property name="text">
+    <string>second</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="copy_right_label">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>0</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px;</string>
+   </property>
+   <property name="text">
+    <string>wissemzidi©️2023</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>new_otp_token</zorder>
+  <zorder>otp_timeCounter</zorder>
+  <zorder>curr_otp</zorder>
+  <zorder>copy_btn</zorder>
+  <zorder>current_otp_name</zorder>
+  <zorder>new_otp_name</zorder>
+  <zorder>deleteOtp_btn</zorder>
+  <zorder>addOtp_btn</zorder>
+  <zorder>otp_pages</zorder>
+  <zorder>second_label</zorder>
+  <zorder>copy_right_label</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>copy_btn</tabstop>
+  <tabstop>curr_otp</tabstop>
+  <tabstop>new_otp_token</tabstop>
+  <tabstop>addOtp_btn</tabstop>
+ </tabstops>
+ <resources>
+  <include location="test.qrc"/>
+ </resources>
+ <connections/>
+</ui>
