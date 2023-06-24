@@ -83,7 +83,7 @@ SOFTWARE.
 
 - [Website <img src="https://github.com/Wissem-Zidi/icons/blob/main/home.svg" alt="" height="15">](https://wissem-zidi-ofc.netlify.com)
 - [Email <img src="https://github.com/Wissem-Zidi/icons/blob/main/Email.svg" alt="" height="15">](https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=wissem.zidi.contact@gmail.com)
-- [Github <img src="https://github.com/Wissem-Zidi/icons/blob/main/github.svg" alt="" height="15">](https://github.com/Wissem-Zidi/)
+- [Github <img src="https://github.com/Wissem-Zidi/icons/blob/main/github.svg" alt="" height="15">](https://github.com/wissemzidi/)
 
 [Back To The Top](#read-me)
 
